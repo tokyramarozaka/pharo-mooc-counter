@@ -20,3 +20,12 @@ CounterTest >> testIncrement [
 	c increment. 
 	self assert: c count equals: 1.
 ]
+
+{ #category : 'tests' }
+CounterTest >> testIncrementBy [
+
+	| c |
+	c := Counter new.
+	c incrementBy: 10. 
+	self assert: c count equals: 10
+]

@@ -28,6 +28,11 @@ Counter >> increment [
 	count := count + 1
 ]
 
+{ #category : 'accessing' }
+Counter >> incrementBy: anInteger [
+	count := count + anInteger
+]
+
 { #category : 'initialization' }
 Counter >> initialize [ 
 	super initialize .
